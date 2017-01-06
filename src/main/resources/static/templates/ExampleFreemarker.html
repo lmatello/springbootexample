@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <table border="1">
+        <tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+        <#list personas as persona>
+            <tr>
+                <td>${persona.nombre}</td>
+                <td>${persona.apellido}</td>
+                <td>${persona.dni?string["0"]}</td>
+            </tr>
+        </#list>
+    </table>
+    <a href="/html">link</a>
+</head>
+<body>
+</body>
+</html>
